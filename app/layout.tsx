@@ -8,8 +8,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gemini.vercel.ai"),
-  title: "Andrey's Resume Chatbot",
-  description: "Andrey Resume Chatbot",
+  title: "Andrey's Chatbot",
+  description: "Andrey's Chatbot",
 };
 
 export default async function RootLayout({

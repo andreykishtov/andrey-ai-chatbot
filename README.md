@@ -1,10 +1,10 @@
 <a href="https://chat.vercel.ai/">
-  <img alt="Andrey Resume Chatbot" src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Andrey Resume Chatbot</h1>
+  <img alt="Andrey Chatbot" src="app/(chat)/opengraph-image.png">
+  <h1 align="center">Andrey Chatbot</h1>
 </a>
 
 <p align="center">
-  Andrey Resume Chatbot
+  Andrey Chatbot
 </p>
 
 <p align="center">

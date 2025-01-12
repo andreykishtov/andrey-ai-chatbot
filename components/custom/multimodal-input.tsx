@@ -21,14 +21,14 @@ import { Textarea } from "../ui/textarea";
 
 const suggestedActions = [
   {
-    title: "Help me book a flight",
-    label: "from San Francisco to London",
-    action: "Help me book a flight from San Francisco to London",
+    title: "Ask About Andrey Kishtov",
+    label: "How many years in tech?",
+    action: "how many years andrey in tech",
   },
   {
-    title: "What is the status",
-    label: "of flight BA142 flying tmrw?",
-    action: "What is the status of flight BA142 flying tmrw?",
+    title: "Ask About Andrey Kishtov",
+    label: "what he likes?",
+    action: "what does andrey like?",
   },
 ];
 
