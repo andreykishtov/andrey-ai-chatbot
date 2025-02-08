@@ -31,9 +31,6 @@ export async function generateSampleFlightStatus({
         terminal: z.string().describe("Arrival terminal"),
         gate: z.string().describe("Arrival gate"),
       }),
-      totalDistanceInMiles: z
-        .number()
-        .describe("Total flight distance in miles"),
     }),
   });
 

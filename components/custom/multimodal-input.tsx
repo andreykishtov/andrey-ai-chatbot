@@ -22,8 +22,8 @@ import { Textarea } from "../ui/textarea";
 const suggestedActions = [
   {
     title: "Ask About Andrey Kishtov",
-    label: "How many years in tech?",
-    action: "how many years andrey in tech",
+    label: "I want to know about Andrey?",
+    action: "I want to know about Andrey?",
   },
   {
     title: "Ask About Andrey Kishtov",

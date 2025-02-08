@@ -17,7 +17,7 @@ export interface LoginActionState {
 
 export const login = async (
   _: LoginActionState,
-  formData: FormData,
+  formData: FormData
 ): Promise<LoginActionState> => {
   try {
     const validatedData = authFormSchema.parse({
@@ -53,7 +53,7 @@ export interface RegisterActionState {
 
 export const register = async (
   _: RegisterActionState,
-  formData: FormData,
+  formData: FormData
 ): Promise<RegisterActionState> => {
   try {
     const validatedData = authFormSchema.parse({
@@ -72,10 +72,10 @@ export const register = async (
         password: validatedData.password,
         redirect: false,
       });
-
       return { status: "success" };
     }
   } catch (error) {
+    console.log(error);
     if (error instanceof z.ZodError) {
       return { status: "invalid_data" };
     }

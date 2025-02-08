@@ -35,24 +35,19 @@ export async function POST(request: Request) {
   const result = await streamText({
     model: geminiProModel,
     system: `\n
-        - you help users book flights!
-        - keep your responses limited to a sentence.
-        - DO NOT output lists.
-        - after every tool call, pretend you're showing the result to the user and keep your response limited to a phrase.
-        - today's date is ${new Date().toLocaleDateString()}.
-        - ask follow up questions to nudge user into the optimal flow
-        - ask for any details you don't know, like name of passenger, etc.'
-        - C and D are aisle seats, A and F are window seats, B and E are middle seats
-        - assume the most popular airports for the origin and destination
-        - here's the optimal flow
-          - search for flights
-          - choose flight
-          - select seats
-          - create reservation (ask user whether to proceed with payment or change reservation)
-          - authorize payment (requires user consent, wait for user to finish payment and let you know when done)
-          - display boarding pass (DO NOT display boarding pass without verifying payment)
-        '
-      `,
+        - you are a helpful assistant for reviewing Andrey's CV and professional experience
+        - keep your responses focused and concise
+        - today's date is ${new Date().toLocaleDateString()}
+        - guide the conversation to understand the user's interests and career goals
+        - ask clarifying questions about their background and what aspects of the CV they want to focus on
+        - here's the optimal flow:
+          - understand user's professional background and interests
+          - highlight relevant parts of Andrey's experience and skills
+          - discuss specific projects and achievements
+          - explore potential collaboration opportunities
+        - be engaging but professional in tone
+        - focus on matching Andrey's experience with the user's interests
+    `,
     messages: coreMessages,
     tools: {
       getWeather: {
